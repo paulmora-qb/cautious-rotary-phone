@@ -1,7 +1,11 @@
 from kedro.pipeline import node
 
-from .test_node import test_func
+from .loading import load_songs_in_kern
 
-test_node = node(
-    func=test_func, inputs="params:test", outputs="test1", name="test", tags=["test"]
+loading_node = node(
+    func=load_songs_in_kern,
+    inputs="params:feature_engineering.loading_raw",
+    outputs="test1",
+    name="test",
+    tags=["test"],
 )

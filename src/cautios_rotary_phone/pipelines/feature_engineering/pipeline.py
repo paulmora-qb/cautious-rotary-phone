@@ -1,10 +1,10 @@
 from kedro.pipeline import Pipeline
 
-from .nodes import test_node
+from .nodes import loading_node
 
 
 def create_pipeline() -> Pipeline:
 
-    nodes = [test_node]
+    nodes = [loading_node]
 
     return Pipeline(nodes)

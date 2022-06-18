@@ -1,2 +1,4 @@
 
-test: 1
+feature_engineering:
+  loading_raw:
+    path: "./data/01_raw"
